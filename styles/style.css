@@ -25,16 +25,6 @@ body{
     /* overflow-x: hidden; */
     background-color: var(--white);
 }
-@keyframes pulse-animation {
-    0% { transform: scale(1); text-shadow: none;}
-    50% { transform: scale(1.02);
-            text-shadow: 0px 0px 5px white; }
-    100% { transform: scale(1); text-shadow: none;}
-  }
-  
-.pulse {
-animation: pulse-animation 1s infinite;
-}
 
 .container{
     max-width: 1200px;
@@ -82,7 +72,7 @@ ul{
     transition: all 0.5s ease-in-out;
 }
 .navbar.sticky{
-    padding: 20px 25px;
+    padding: 20px 10px;
     background-color: var(--red);
     box-shadow: 0 0 4px 4px var(--red);
 }
@@ -151,9 +141,6 @@ ul{
 .menu-visible{
     display: block !important;
 }
-/* .navbar .menu{
-    display: none;
-} */
 /* HOMEPAGE */
 .home-section{
     
@@ -469,6 +456,9 @@ h2{
         text-align: center;
         display: none;
     }
+    html.scrolled .navbar .menu{
+        top:65px;
+    }
     .navbar .menu .nav-item{
         display: block;
         margin: 10px 0;
@@ -502,6 +492,9 @@ h2{
     }
     .navbar{
         padding: 25px;
+    }
+    .navbar.sticky{
+        padding: 20px 25px;
     }
     .menu-btn{
         height: 36px;
