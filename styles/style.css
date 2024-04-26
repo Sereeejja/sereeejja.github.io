@@ -512,20 +512,18 @@ h2{
     }
     .home-section .home-text h4{
         font-size: 1.3rem;
-        color: var(--white);
     }
     .home-section .home-text h1{
         font-size: 2.35rem;
     }
     .home-section .home-text span{
         font-size: 1.2rem;
-        color: var(--white);
     }
     .navbar .menu{
         top: 85px;
     }
     .home-section{
-        min-height: 90vh;
+        min-height: 100vh;
         height: 100%;
         padding-left: 15px;
         padding-right: 15px;
